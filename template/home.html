@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>WORD COUNT</h1>
+<a href="{% url 'aboutus' %}">About Us</a>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br>
+    <input type="submit" name="COUNT!"  />
+</form>
+</body>
+</html>
